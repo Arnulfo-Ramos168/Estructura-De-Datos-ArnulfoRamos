@@ -1,6 +1,6 @@
 package edu.arnulfo.ramos.utils.sorting;
 
-import edu.arnulfo.ramos.utils.MetodosSorter;
+import edu.arnulfo.ramos.utils.*;
 
 public class Main {
     public static void main(String[] args) {

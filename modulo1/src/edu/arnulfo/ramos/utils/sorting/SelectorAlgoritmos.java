@@ -59,6 +59,7 @@ public class SelectorAlgoritmos {
                         }
                         N[j+1] = current;
                         MOVIMIENTOS++;
+
                     }
                 }
             };
