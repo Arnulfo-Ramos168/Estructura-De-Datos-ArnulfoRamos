@@ -25,5 +25,5 @@ public enum MetodosSorter {
     /**
      * Algoritmo de ordenación Heap Sort.
      */
-    HEAP
+    HEAP,
 }
