@@ -14,11 +14,11 @@ public class HashTableTest {
     public void testIsEmptyAndSize() {
         Hashtable<String, Integer> table = new Hashtable<>();
         assertTrue(table.isEmpty());
-        assertEquals(0, table.Size());
+        assertEquals(0, table.size());
 
         table.add("A", 1);
         assertFalse(table.isEmpty());
-        assertEquals(1, table.Size());
+        assertEquals(1, table.size());
     }
 
     /**
