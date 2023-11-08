@@ -3,6 +3,11 @@ package edu.arnulfo.ramos.examenrapido5.process;
 public class OchoReinas {
     static final int x = 8;
     public static int [] soluciones = new int[x];
+
+    /**
+     * ImprimirTablero es un metodo que se encarga de imprimir las reinas en donde hay un espacio libre, y en donde no es valido
+     * se imprime un "[]"
+     */
     static void imprimirTablero(){
         for (int i = 0; i < x; i++) {
             for (int j = 0; j < x; j++) {
@@ -18,6 +23,12 @@ public class OchoReinas {
         System.out.println();
     }
 
+    /**}
+     * Este metodo lo que hace es validar si donde se coloca una reina se valide donde es posible colocar otra reina
+     * @param filas
+     * @param columnas
+     * @return
+     */
     static boolean validar(int filas, int columnas) {
         for (int i = 0; i < filas; i++) {
             if (soluciones[i] == columnas ||
@@ -29,6 +40,10 @@ public class OchoReinas {
         return true;
     }
 
+    /**
+     * este metodo integra los metodos anteriores para dar una solucion final
+     * @param filas
+     */
     public static void resolverReinas(int filas){
         if (filas == x){
             imprimirTablero();
